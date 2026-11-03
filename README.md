@@ -13,12 +13,13 @@ Priority calculation: each complaint is assigned a priority so urgent issues sta
 Reports: summary view of complaints for administrators
 
 Tech Stack
+
 Java (Swing for the GUI)
 MySQL
 JDBC
 Maven
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 CivicTrack/
@@ -63,16 +64,19 @@ JDK 8 or later
 MySQL Server
 Maven
 An IDE such as IntelliJ IDEA
+
 1. Clone the repository
 bash
 git clone https://github.com/IriskItAll/CivicTrack.git
 cd CivicTrack
+
 2. Set up the database
 
 Run the SQL script in MySQL (Workbench or the command line):
 
 bash
 mysql -u root -p < civictrack_database.sql
+
 3. Configure the connection
 
 Open DBConnection.java and update the connection details to match your local MySQL setup:
@@ -81,6 +85,7 @@ java
 String url = "jdbc:mysql://localhost:3306/your_database_name";
 String username = "your_username";
 String password = "your_password";
+
 4. Build and run
 bash
 mvn clean install
@@ -88,6 +93,8 @@ mvn clean install
 Then open the project in your IDE and run Main.java.
 
 screenshots
+
+
 Main Dashboard
 
 
