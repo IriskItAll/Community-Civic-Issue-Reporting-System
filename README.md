@@ -5,29 +5,58 @@ A desktop complaint management system built with Java and MySQL. Citizens can re
 I built this to practice connecting a Java GUI application to a relational database using JDBC, and to model a real workflow: report, prioritise, track, resolve.
 
 Features
+
 Report an issue: submit a complaint through a form, saved directly to the database
 Track a complaint: look up a submitted complaint and check its current status
 Admin dashboard: view all complaints and update their status
 Priority calculation: each complaint is assigned a priority so urgent issues stand out
 Reports: summary view of complaints for administrators
+
 Tech Stack
 Java (Swing for the GUI)
 MySQL
 JDBC
 Maven
-Project Structure
+
+## 📂 Project Structure
+
+```text
 CivicTrack/
-├── Main.java                  # Application entry point
-├── DBConnection.java          # Database connection setup
-├── Complaint.java             # Complaint model class
-├── ComplaintDAO.java          # Database operations for complaints
-├── PriorityCalculator.java    # Priority logic
-├── DashboardFrame.java        # Main window
-├── ReportIssueFrame.java      # Complaint submission screen
-├── TrackComplaintFrame.java   # Complaint tracking screen
-├── AdminDashboardFrame.java   # Admin screen
-├── civictrack_database.sql    # Database schema
-└── pom.xml                    # Maven configuration
+│
+├── Main.java
+│
+├── DBConnection.java
+├── Complaint.java
+├── ComplaintDAO.java
+├── PriorityCalculator.java
+│
+├── DashboardFrame.java
+├── AdminDashboardFrame.java
+├── ReportIssueFrame.java
+├── TrackComplaintFrame.java
+│
+├── civictrack_database.sql
+├── pom.xml
+└── .gitignore
+```
+
+### File Descriptions
+
+| File | Description |
+|---|---|
+| `Main.java` | Application entry point |
+| `DBConnection.java` | Handles database connectivity |
+| `Complaint.java` | Complaint model class |
+| `ComplaintDAO.java` | Handles complaint database operations |
+| `PriorityCalculator.java` | Calculates complaint priority |
+| `DashboardFrame.java` | Main application dashboard |
+| `AdminDashboardFrame.java` | Admin dashboard |
+| `ReportIssueFrame.java` | Complaint submission interface |
+| `TrackComplaintFrame.java` | Complaint tracking interface |
+| `civictrack_database.sql` | Database schema |
+| `pom.xml` | Maven configuration |
+| `.gitignore` | Files excluded from Git tracking |
+
 Getting Started
 Prerequisites
 JDK 8 or later
